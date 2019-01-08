@@ -5,7 +5,7 @@ using UnityEngine;
 public class Boss {        
     private int hp=100;   // 体力
     private int power=25; // 攻撃力
-    private int mp=53;    //マジックポイント
+    private int mp=54;    //マジックポイント
 
     // 攻撃用の関数
     public void Attack()
@@ -24,7 +24,7 @@ public class Boss {
     //魔法用の関数
     public void Magic()
     {
-        if(mp>=4)
+        if(mp>=5)
         {
             mp-=5;
             Debug.Log("魔法攻撃をした。残りMPは"+mp+"。");
